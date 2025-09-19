@@ -1,3 +1,2 @@
-# kids-shop-and-more
-Website for KID'S SHOP AND MORE Provision Store.
-Are located at45 Kangiwa Road G.R.A
+Welcome to KID'S SHOP AND MORE Provision Store!
+Visit our website: https://abuibraheem517.github.io/kids-shop-and-more/
