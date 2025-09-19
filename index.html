@@ -1,139 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KID'S SHOP AND MORE</title>
+  <meta name="description" content="Kid's Shop and More - Provisions store in Katsina. Buy groceries, snacks, and essentials.">
+  <meta name="keywords" content="shop, groceries, Katsina, provisions, Kid's Shop and More">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      padding: 30px;
-      text-align: center;
-      font-size: 18px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
     }
-    h1 { font-size: 32px; color: #2c3e50; }
-    h2 { font-size: 26px; color: #2c3e50; margin-top: 40px; }
-    p, li { font-size: 18px; line-height: 1.6; }
-    .highlight { font-weight: bold; color: #e67e22; }
-    .gallery {
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    nav {
+      background: #34495e;
       display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
       justify-content: center;
-      margin-top: 30px;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    nav a:hover { color: #e67e22; }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
     .product {
-      width: 180px;
-      text-align: center;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
+    .product:hover { transform: scale(1.05); }
     .product img {
       width: 100%;
-      height: auto;
+      height: 140px;
+      object-fit: cover;
       border-radius: 8px;
     }
+
     .whatsapp-button {
       background-color: #25D366;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 28px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      font-size: 18px;
       display: inline-block;
       margin-top: 20px;
-      font-size: 18px;
+      transition: background 0.3s;
     }
-    form input, form label {
+    .whatsapp-button:hover { background-color: #1ebe5b; }
+
+    form {
+      margin-top: 20px;
+      text-align: left;
+    }
+    form label {
       display: block;
-      margin: 15px auto;
+      margin: 10px 0 5px;
+    }
+    form input {
       width: 100%;
-      max-width: 300px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
       font-size: 16px;
     }
     form input[type="submit"] {
       background-color: #2c3e50;
       color: white;
-      padding: 10px;
       border: none;
-      border-radius: 5px;
       margin-top: 15px;
       cursor: pointer;
-      font-size: 16px;
+      transition: background 0.3s;
+    }
+    form input[type="submit"]:hover { background-color: #1a242f; }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to KID'S SHOP AND MORE</h1>
-  <p>Located at <span class="highlight">45 Kangiwa Road, G.R.A, Katsina</span>, we offer a wide range of provisions including:</p>
-  <ul style="list-style: none; padding: 0;">
-    <li>Sugar, milk powder, biscuits, chocolate, sweets, peanuts</li>
-    <li>Eggs 🥚, snacks, flour, rice, beans, spaghetti</li>
-    <li>Vegetable oil, palm oil, and many more essentials</li>
-  </ul>
+  <header>
+    <h1>Welcome to KID'S SHOP AND MORE</h1>
+    <p>Your trusted provisions store in Katsina</p>
+  </header>
 
-  <h2>🕒 Opening Hours</h2>
-  <p>6:00 AM – 9:00 PM, Monday to Sunday</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+    <a href="#products">Products</a>
+    <a href="#order">Order</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#map">Map</a>
+  </nav>
 
-  <h2>📞 Contact Us</h2>
-  <p><strong>Phone (Calls):</strong> 09121704067</p>
-  <p><strong>WhatsApp:</strong> 09160227610</p>
-  <p>Feel free to reach out for inquiries, orders, or friendly service!</p>
+  <section id="about">
+    <h2>🛒 About Us</h2>
+    <p>Located at <span class="highlight">45 Kangiwa Road, G.R.A, Katsina</span>, we offer a wide range of provisions including:</p>
+    <ul>
+      <li>Sugar, milk powder, biscuits, chocolate, sweets, peanuts</li>
+      <li>Eggs 🥚, snacks, flour, rice, beans, spaghetti</li>
+      <li>Vegetable oil, palm oil, and many more essentials</li>
+    </ul>
+  </section>
 
-  <h2>🛍️ Our Products</h2>
-  <div class="gallery">
-    <div class="product">
-      <img src="https://copilot.microsoft.com/th/id/BCO.7e3f4e7e-7c3e-4a3e-9f2f-1d2f3e7e7e7e.png" alt="Peak Milk">
-      <p>Peak Milk</p>
+  <section id="hours">
+    <h2>🕒 Opening Hours</h2>
+    <p>6:00 AM – 9:00 PM, Monday to Sunday</p>
+  </section>
+
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <p><strong>Phone (Calls):</strong> 09121704067</p>
+    <p><strong>WhatsApp:</strong> 09160227610</p>
+    <a href="https://wa.me/2349160227610" target="_blank" class="whatsapp-button">📲 Order Now on WhatsApp</a>
+  </section>
+
+  <section id="products">
+    <h2>🛍️ Our Products</h2>
+    <div class="gallery">
+      <div class="product">
+        <img src="https://i.ibb.co/Lhv5rtm/peak-milk.jpg" alt="Peak Milk">
+        <p>Peak Milk</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/6FmxXYB/spaghetti.jpg" alt="Golden Penny Spaghetti">
+        <p>Golden Penny Spaghetti</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/VHh0B1x/veg-oil.jpg" alt="Vegetable Oil">
+        <p>Vegetable Oil</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/3mrzrkM/biscuits.jpg" alt="Digestive Biscuits">
+        <p>Digestive Biscuits</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/vJ0DGxs/indomie.jpg" alt="Indomie Noodles">
+        <p>Indomie Instant Noodles</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/SVX1rZZ/milo.jpg" alt="Milo Chocolate Drink">
+        <p>Milo Chocolate Drink</p>
+      </div>
     </div>
-    <div class="product">
-      <img src="https://copilot.microsoft.com/th/id/BCO.8a2f4e7e-8b3e-4b3e-9f2f-2d2f4e8e8e8e.png" alt="Golden Penny Spaghetti">
-      <p>Golden Penny Spaghetti</p>
-    </div>
-    <div class="product">
-      <img src="https://copilot.microsoft.com/th/id/BCO.1c4f4e7e-1d3e-4d3e-9f2f-4d2f6e1e1e1e.png" alt="Vegetable Oil">
-      <p>Vegetable Oil</p>
-    </div>
-    <div class="product">
-      <img src="https://copilot.microsoft.com/th/id/BCO.4d7f4e7e-4e3e-4e3e-9f2f-7d2f9e4e4e4e.png" alt="Digestive Biscuits">
-      <p>Digestive Biscuits</p>
-    </div>
-    <div class="product">
-      <img src="https://copilot.microsoft.com/th/id/BCO.5e8f4e7e-5f3e-4f3e-9f2f-8d2f0e5e5e5e.png" alt="Indomie Noodles">
-      <p>Indomie Instant Noodles</p>
-    </div>
-    <div class="product">
-      <img src="https://copilot.microsoft.com/th/id/BCO.6f9f4e7e-6g3e-4g3e-9f2f-9d2f1e6e6e6e.png" alt="Milo">
-      <p>Milo Chocolate Drink</p>
-    </div>
-  </div>
+  </section>
 
-  <h2>📦 Place Your Order</h2>
-  <p>Want to order something? Tap the button below to chat with us on WhatsApp!</p>
-  <a href="https://wa.me/2349160227610" target="_blank" class="whatsapp-button">
-    📲 Order Now on WhatsApp
-  </a>
+  <section id="order">
+    <h2>📝 Place an Order Online</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <h2>💬 Customer Reviews</h2>
-  <p>“Best shop in Katsina! Always stocked and friendly.” – Amina</p>
-  <p>“Affordable prices and fast service.” – Yusuf</p>
-  <p>“I love the variety and the clean setup.” – Fatima</p>
+      <label for="product">Product:</label>
+      <input type="text" id="product" name="product" required>
 
-  <h2>📝 Place an Order Online</h2>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    <label for="product">Product:</label>
-    <input type="text" id="product" name="product">
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity">
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone">
-    <input type="submit" value="Submit">
-  </form>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
 
-  <h2>📍 Find Us on the Map</h2>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.3456789!2d7.6051234!3d12.9934567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b1234567890abc%3A0xabcdef1234567890!2s45%20Kangiwa%20Road%2C%20G.R.A%2C%20Katsina!5e0!3m2!1sen!2sng!4v1691234567890"
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-  </iframe>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <input type="submit" value="Submit Order">
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>💬 Customer Reviews</h2>
+    <p>“Best shop in Katsina! Always stocked and friendly.” – Amina</p>
+    <p>“Affordable prices and fast service.” – Yusuf</p>
+    <p>“I love the variety and the clean setup.” – Fatima</p>
+  </section>
+
+  <section id="map">
+    <h2>📍 Find Us on the Map</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.3456789!2d7.6051234!3d12.9934567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b1234567890abc%3A0xabcdef1234567890!2s45%20Kangiwa%20Road%2C%20G.R.A%2C%20Katsina!5e0!3m2!1sen!2sng!4v1691234567890"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kid's Shop and More | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
