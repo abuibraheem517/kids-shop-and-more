@@ -19,6 +19,21 @@
       display: inline-block;
       margin-top: 20px;
     }
+    form input, form label {
+      display: block;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+    form input[type="submit"] {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -73,6 +88,22 @@
     📲 Order Now on WhatsApp
   </a>
 
+  <h2>💬 Customer Reviews</h2>
+  <p>“Best shop in Katsina! Always stocked and friendly.” – Amina</p>
+  <p>“Affordable prices and fast service.” – Yusuf</p>
+  <p>“I love the variety and the clean setup.” – Fatima</p>
+
+  <h2>📝 Place an Order Online</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="product">Product:</label>
+    <input type="text" id="product" name="product">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity">
+    <input type="submit" value="Submit">
+  </form>
+
   <h2>📍 Find Us on the Map</h2>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.3456789!2d7.6051234!3d12.9934567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b1234567890abc%3A0xabcdef1234567890!2s45%20Kangiwa%20Road%2C%20G.R.A%2C%20Katsina!5e0!3m2!1sen!2sng!4v1691234567890"
@@ -80,4 +111,33 @@
   </iframe>
 
 </body>
-</html>
+    </html>
+
+
+<h2>🛍️ Our Products</h2>
+<div class="gallery">
+  <div class="product">
+    <img src="https://copilot.microsoft.com/th/id/BCO.7e3f4e7e-7c3e-4a3e-9f2f-1d2f3e7e7e7e.png" alt="Peak Milk">
+    <p>Peak Milk</p>
+  </div>
+  <div class="product">
+    <img src="https://copilot.microsoft.com/th/id/BCO.8a2f4e7e-8b3e-4b3e-9f2f-2d2f4e8e8e8e.png" alt="Golden Penny Spaghetti">
+    <p>Golden Penny Spaghetti</p>
+  </div>
+  <div class="product">
+    <img src="https://copilot.microsoft.com/th/id/BCO.1c4f4e7e-1d3e-4d3e-9f2f-4d2f6e1e1e1e.png" alt="Vegetable Oil">
+    <p>Vegetable Oil</p>
+  </div>
+  <div class="product">
+    <img src="https://copilot.microsoft.com/th/id/BCO.4d7f4e7e-4e3e-4e3e-9f2f-7d2f9e4e4e4e.png" alt="Digestive Biscuits">
+    <p>Digestive Biscuits</p>
+  </div>
+  <div class="product">
+    <img src="https://copilot.microsoft.com/th/id/BCO.5e8f4e7e-5f3e-4f3e-9f2f-8d2f0e5e5e5e.png" alt="Indomie Noodles">
+    <p>Indomie Instant Noodles</p>
+  </div>
+  <div class="product">
+    <img src="https://copilot.microsoft.com/th/id/BCO.6f9f4e7e-6g3e-4g3e-9f2f-9d2f1e6e6e6e.png" alt="Milo">
+    <p>Milo Chocolate Drink</p>
+  </div>
+  </div>
